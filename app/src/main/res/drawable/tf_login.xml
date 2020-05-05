@@ -1,0 +1,21 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:startColor="@color/tf_login_activity_color"
+        android:endColor="@color/tf_login_activity_color"
+        />
+
+    <size
+        android:height="50dp"
+        android:width="300dp"
+        />
+
+    <corners
+        android:radius="2dp"
+        />
+
+    <stroke
+        android:color="#ffffff"
+        android:width="0.8dp"
+        />
+
+</shape>
