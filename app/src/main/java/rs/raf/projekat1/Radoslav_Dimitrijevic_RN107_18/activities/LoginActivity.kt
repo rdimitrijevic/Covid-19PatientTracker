@@ -2,12 +2,16 @@ package rs.raf.projekat1.Radoslav_Dimitrijevic_RN107_18.activities
 
 import android.content.Context
 import android.content.Intent
-import android.content.SharedPreferences
-import androidx.appcompat.app.AppCompatActivity
+import android.content.res.Resources
 import android.os.Bundle
+import android.util.DisplayMetrics
+import android.view.ViewGroup
+import android.widget.LinearLayout
+import android.widget.RelativeLayout
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.marginStart
 import androidx.core.widget.doAfterTextChanged
-import androidx.core.widget.doOnTextChanged
 import kotlinx.android.synthetic.main.activity_login.*
 import rs.raf.projekat1.Radoslav_Dimitrijevic_RN107_18.R
 import rs.raf.projekat1.Radoslav_Dimitrijevic_RN107_18.viewmodels.LoginViewModel
@@ -22,8 +26,11 @@ class LoginActivity : AppCompatActivity(R.layout.activity_login) {
         val IME_BOLNICE: String = "ime"
     }
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide()
+
         initListeners()
     }
 
@@ -41,7 +48,7 @@ class LoginActivity : AppCompatActivity(R.layout.activity_login) {
                 && !imeBolnice.isNullOrEmpty()
                 && !pin.isNullOrEmpty() ) {
 
-                Timber.e(pin ?: "nema stringa")
+                Timber.e(pin)
                 Timber.e(R.string.PIN.toString())
 
                 if( pin.trim() != "1234" ) {
@@ -87,4 +94,11 @@ class LoginActivity : AppCompatActivity(R.layout.activity_login) {
         }
     }
 
+    private fun pxToDp(px: Int): Int {
+        return (px / Resources.getSystem().displayMetrics.density).toInt()
+    }
+
+    private fun dpToPx(dp: Int): Int {
+        return (dp * Resources.getSystem().displayMetrics.density).toInt()
+    }
 }

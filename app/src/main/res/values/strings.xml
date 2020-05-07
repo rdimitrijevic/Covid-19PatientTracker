@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Radoslav_Dimitrijevic_RN107_18</string>
+    <string name="app_name">COVID19\nPatientTracker</string>
     <string name="application_logo">Application logo</string>
     <string name="login_btn_text">PRIJAVI ME</string>
     <string name="login_decs">Informacioni sistem za pracenje stanja obolelih od Covid-19</string>
@@ -10,4 +10,8 @@
     <string name="PIN">1234</string>
     <string name="login_pin_errmsg">Wrong pin, pleas try again</string>
     <string name="login_fields_errmsg">Pleas fill in all fields</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
