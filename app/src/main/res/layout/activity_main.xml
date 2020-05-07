@@ -4,16 +4,80 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.MainActivity">
+    tools:context=".activities.MainActivity"
+    android:background="@drawable/splash_drawable"
+    >
 
-
-    <Button
-        android:id="@+id/main_logout_btn"
-        app:layout_constraintTop_toTopOf="parent"
+    <ToggleButton
+        android:id="@+id/main_btn_stanje"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:textOn="@string/main_stanje"
+        android:textOff="@string/main_stanje"
+        android:disabledAlpha="1.2"
+        android:background="@drawable/sl_stanje"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="@dimen/main_btn_bottom_padding"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/main_btn_unos"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="logout"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        />
+
+    <ToggleButton
+        android:id="@+id/main_btn_unos"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="@drawable/sl_unos"
+        android:textOn="@string/main_unos"
+        android:textOff="@string/main_unos"
+        android:disabledAlpha="1.2"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="@dimen/main_btn_bottom_padding"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/main_btn_liste"
+        app:layout_constraintStart_toEndOf="@id/main_btn_stanje"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        />
+
+    <ToggleButton
+        android:id="@+id/main_btn_liste"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:textOn="@string/main_liste"
+        android:textOff="@string/main_liste"
+        android:disabledAlpha="1.2"
+        android:background="@drawable/sl_liste"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="@dimen/main_btn_bottom_padding"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/main_btn_profil"
+        app:layout_constraintStart_toEndOf="@id/main_btn_unos"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        />
+
+    <ToggleButton
+        android:id="@+id/main_btn_profil"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="@drawable/sl_profile"
+        android:textOn="@string/main_profil"
+        android:textOff="@string/main_profil"
+        android:disabledAlpha="0.5"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="@dimen/main_btn_bottom_padding"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/main_btn_liste"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintHorizontal_chainStyle="spread"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

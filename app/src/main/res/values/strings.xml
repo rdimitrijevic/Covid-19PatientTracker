@@ -14,4 +14,8 @@
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="main_stanje">Stanje</string>
+    <string name="main_unos">Unos</string>
+    <string name="main_liste">Liste</string>
+    <string name="main_profil">Profil</string>
 </resources>

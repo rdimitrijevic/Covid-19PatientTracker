@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import android.widget.Toast
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.marginStart
 import androidx.core.widget.doAfterTextChanged
@@ -18,7 +19,7 @@ import rs.raf.projekat1.Radoslav_Dimitrijevic_RN107_18.viewmodels.LoginViewModel
 import timber.log.Timber
 
 class LoginActivity : AppCompatActivity(R.layout.activity_login) {
-    private val viewModel: LoginViewModel = LoginViewModel()
+    private val viewModel: LoginViewModel by viewModels()
 
     companion object {
         val IME: String = "ime"
