@@ -23,8 +23,8 @@ class LoginActivity : AppCompatActivity(R.layout.activity_login) {
 
     companion object {
         val IME: String = "ime"
-        val PREZIME: String = "ime"
-        val IME_BOLNICE: String = "ime"
+        val PREZIME: String = "prezime"
+        val IME_BOLNICE: String = "ime_bolnice"
     }
 
 
@@ -95,11 +95,11 @@ class LoginActivity : AppCompatActivity(R.layout.activity_login) {
         }
     }
 
-    private fun pxToDp(px: Int): Int {
+/*    private fun pxToDp(px: Int): Int {
         return (px / Resources.getSystem().displayMetrics.density).toInt()
     }
 
     private fun dpToPx(dp: Int): Int {
         return (dp * Resources.getSystem().displayMetrics.density).toInt()
-    }
+    }*/
 }

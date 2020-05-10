@@ -4,13 +4,10 @@
     >
 
     <gradient
-        android:startColor="@color/end_color"
-        android:endColor="@color/end_color"
-        />
-
-    <stroke
-        android:color="#ffffff"
-        android:width="0.8dp"
+        android:startColor="@color/stanje_ends_clicked"
+        android:centerColor="@color/stanje_mid_clicked"
+        android:endColor="@color/stanje_ends_clicked"
+        android:angle="180"
         />
 
     <corners

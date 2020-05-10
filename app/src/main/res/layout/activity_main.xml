@@ -7,11 +7,17 @@
     tools:context=".activities.MainActivity"
     android:background="@drawable/splash_drawable"
     >
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/navbar_h"
+        />
 
     <ToggleButton
         android:id="@+id/main_btn_stanje"
         android:layout_width="0dp"
-        android:layout_height="80dp"
+        android:layout_height="@dimen/navbar_h"
         android:textOn="@string/main_stanje"
         android:textOff="@string/main_stanje"
         android:disabledAlpha="1.2"
@@ -29,7 +35,7 @@
     <ToggleButton
         android:id="@+id/main_btn_unos"
         android:layout_width="0dp"
-        android:layout_height="80dp"
+        android:layout_height="@dimen/navbar_h"
         android:background="@drawable/sl_unos"
         android:textOn="@string/main_unos"
         android:textOff="@string/main_unos"
@@ -47,7 +53,7 @@
     <ToggleButton
         android:id="@+id/main_btn_liste"
         android:layout_width="0dp"
-        android:layout_height="80dp"
+        android:layout_height="@dimen/navbar_h"
         android:textOn="@string/main_liste"
         android:textOff="@string/main_liste"
         android:disabledAlpha="1.2"
@@ -65,7 +71,7 @@
     <ToggleButton
         android:id="@+id/main_btn_profil"
         android:layout_width="0dp"
-        android:layout_height="80dp"
+        android:layout_height="@dimen/navbar_h"
         android:background="@drawable/sl_profile"
         android:textOn="@string/main_profil"
         android:textOff="@string/main_profil"

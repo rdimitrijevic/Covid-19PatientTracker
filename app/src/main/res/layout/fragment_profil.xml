@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    android:paddingBottom="7dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_prof_radnika"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profil_zdravstvenog_radnika"
+        android:textColor="@color/white"
+        android:textSize="29sp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/ic_profil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_profil_radnika"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_prof_radnika"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/ime_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ime_zdravstvenog_radnika"
+        android:textSize="@dimen/profil_info_label_font_size"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ic_profil"
+        app:layout_constraintBottom_toTopOf="@id/ime_data"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        />
+
+    <TextView
+        android:id="@+id/ime_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/placeholder"
+        android:textSize="@dimen/profil_data_label_font_size"
+        app:layout_constraintStart_toStartOf="@id/ime_label"
+        app:layout_constraintTop_toBottomOf="@id/ime_label"
+        app:layout_constraintBottom_toTopOf="@id/prezime_label"
+        />
+
+    <TextView
+        android:id="@+id/prezime_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prezime_zdravstvenog_radnika"
+        android:textSize="@dimen/profil_info_label_font_size"
+        app:layout_constraintStart_toStartOf="@id/ime_label"
+        app:layout_constraintTop_toBottomOf="@id/ime_data"
+        app:layout_constraintBottom_toTopOf="@id/prezime_data"
+        />
+
+    <TextView
+        android:id="@+id/prezime_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/placeholder"
+        android:textSize="@dimen/profil_data_label_font_size"
+        app:layout_constraintStart_toStartOf="@id/ime_label"
+        app:layout_constraintTop_toBottomOf="@id/prezime_label"
+        app:layout_constraintBottom_toTopOf="@id/bolnica_label"
+        />
+
+    <TextView
+        android:id="@+id/bolnica_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bolnica_u_kojoj_je_zaposlen"
+        android:textSize="@dimen/profil_info_label_font_size"
+        app:layout_constraintStart_toStartOf="@id/ime_label"
+        app:layout_constraintTop_toBottomOf="@id/prezime_data"
+        app:layout_constraintBottom_toTopOf="@id/bolnica_data"
+        />
+
+    <TextView
+        android:id="@+id/bolnica_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/placeholder"
+        android:textSize="@dimen/profil_data_label_font_size"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintStart_toStartOf="@id/ime_label"
+        app:layout_constraintTop_toBottomOf="@id/bolnica_label"
+        app:layout_constraintBottom_toTopOf="@id/btn_izmeni"
+        />
+
+    <Button
+        android:id="@+id/btn_izmeni"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:background="@drawable/login_btn_bg"
+        android:gravity="center"
+        android:text="@string/profile_izmeni"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_logout"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:background="@drawable/login_btn_bg"
+        android:gravity="center"
+        android:text="@string/odjava"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_izmeni"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

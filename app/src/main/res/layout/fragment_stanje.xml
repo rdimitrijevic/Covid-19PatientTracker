@@ -1,0 +1,116 @@
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/stanje_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stanje_title_str"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/stanje_cekaonica"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        />
+
+    <TextView
+        android:id="@+id/stanje_cekaonica"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cekaonica_str"
+        android:textSize="20sp"
+        android:paddingStart="@dimen/stanje_frag_padd_tv"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintTop_toBottomOf="@id/stanje_title"
+        app:layout_constraintBottom_toTopOf="@id/stanje_hospitalizovani"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/stanje_cekaonica_broj"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        />
+
+    <TextView
+        android:id="@+id/stanje_cekaonica_broj"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd"
+        android:textSize="20sp"
+        android:text="0"
+        android:paddingEnd="10dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toTopOf="@id/stanje_cekaonica"
+        app:layout_constraintStart_toEndOf="@id/stanje_cekaonica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        />
+
+    <TextView
+        android:id="@+id/stanje_hospitalizovani"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/hospitalizovani_str"
+        android:textSize="20sp"
+        android:paddingStart="@dimen/stanje_frag_padd_tv"
+        app:layout_constraintHorizontal_weight="14"
+        app:layout_constraintTop_toBottomOf="@id/stanje_cekaonica"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/stanje_hospitalizovani_broj"
+        app:layout_constraintBottom_toTopOf="@id/stanje_otpusteni"
+        app:layout_constraintHorizontal_chainStyle="spread"
+
+        />
+
+    <TextView
+        android:id="@+id/stanje_hospitalizovani_broj"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textAlignment="textEnd"
+        android:textSize="20sp"
+        android:paddingEnd="10dp"
+        app:layout_constraintHorizontal_weight="4"
+        app:layout_constraintTop_toTopOf="@id/stanje_hospitalizovani"
+        app:layout_constraintStart_toEndOf="@id/stanje_hospitalizovani"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+
+        />
+
+    <TextView
+        android:id="@+id/stanje_otpusteni"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/otpusteni_str"
+        android:textSize="20sp"
+        android:paddingStart="@dimen/stanje_frag_padd_tv"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintTop_toBottomOf="@id/stanje_hospitalizovani"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/stanje_otpusteni_broj"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+
+        />
+
+    <TextView
+        android:id="@+id/stanje_otpusteni_broj"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="0"
+        android:textSize="20sp"
+        android:textAlignment="textEnd"
+        android:paddingEnd="10dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toTopOf="@id/stanje_otpusteni"
+        app:layout_constraintBottom_toBottomOf="@id/stanje_otpusteni"
+        app:layout_constraintStart_toEndOf="@id/stanje_otpusteni"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

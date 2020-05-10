@@ -30,6 +30,7 @@
         </activity>
 
         <activity android:name=".activities.MainActivity" />
+        <activity android:name="rs.raf.vezbe8.IzmeniProfilActivity" />
     </application>
 
 </manifest>

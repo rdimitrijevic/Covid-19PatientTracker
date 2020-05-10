@@ -10,6 +10,11 @@
     <color name="tf_login_activity_color">#55ffffff</color>
     <color name="white_alpha">#55ffffff</color>
     <color name="white">#ffffff</color>
-
     <color name="black_overlay">#66000000</color>
+
+    <color name="stanje_mid">#00bbbb</color>
+    <color name="stanje_ends">#008080</color>
+
+    <color name="stanje_mid_clicked">#00cccc</color>
+    <color name="stanje_ends_clicked">#00a0a0</color>
 </resources>

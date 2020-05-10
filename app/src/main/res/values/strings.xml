@@ -18,4 +18,27 @@
     <string name="main_unos">Unos</string>
     <string name="main_liste">Liste</string>
     <string name="main_profil">Profil</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cekaonica_str">Broj pacijenata u cekaonici</string>
+    <string name="hospitalizovani_str">Broj hospitalizovanih pacijenata:</string>
+    <string name="otpusteni_str">Broj otpustenih pacijenata:</string>
+    <string name="stanje_title_str">Pregled brojnog stanja pacijenata</string>
+    <string name="profile_odjava">ODJAVA</string>
+    <string name="profile_izmeni">IZMENI</string>
+    <string name="profile_odustani">ODUSTANI</string>
+    <string name="izmeni_radnika_title">Izmeni profil zdravstvenog radnika</string>
+    <string name="profil_zdravstvenog_radnika">Profil zdravstvenog radnika</string>
+    <string name="ime_zdravstvenog_radnika">Ime zdravstvenog radnika</string>
+    <string name="placeholder">placeholder</string>
+    <string name="odjava">ODJAVA</string>
+    <string name="sacuvaj">SACUVAJ</string>
+    <string name="prezime_zdravstvenog_radnika">Prezime zdravstvenog radnika</string>
+    <string name="bolnica_u_kojoj_je_zaposlen">Bolnica u kojoj je zaposlen</string>
+    <string name="test">Doso sam do ovde</string>
+    <string name="otpusteni">Otpusteni</string>
+    <string name="hospitalizacija">Hospitalizacija</string>
+    <string name="cekaonica">Cekaonica</string>
+    <string name="search">Pretrega po imenu i prezimenu</string>
 </resources>

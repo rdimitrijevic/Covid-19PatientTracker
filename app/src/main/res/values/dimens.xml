@@ -11,5 +11,9 @@
     <dimen name="login_btn_margin_h">130dp</dimen>
     <dimen name="main_toolbar_img_w">50dp</dimen>
     <dimen name="main_toolbar_img_h">50dp</dimen>
-    <dimen name="main_btn_bottom_padding">10dp</dimen>
+    <dimen name="main_btn_bottom_padding">6dp</dimen>
+    <dimen name="navbar_h">70dp</dimen>
+    <dimen name="stanje_frag_padd_tv">20dp</dimen>
+    <dimen name="profil_info_label_font_size">18sp</dimen>
+    <dimen name="profil_data_label_font_size">24sp</dimen>
 </resources>

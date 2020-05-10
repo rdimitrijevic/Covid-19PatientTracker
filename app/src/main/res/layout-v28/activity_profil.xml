@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="12dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/splash_drawable"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <TextView
+        android:id="@+id/izmeni_profil_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/izmeni_radnika_title"
+        android:textSize="23sp"
+        android:textFontWeight="500"
+        />
+    
+    <ImageView
+        android:id="@+id/ic_izmeni_profil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_profil_radnika"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/izmeni_profil_title"
+        />
+
+    <EditText
+        android:id="@+id/tf_profil_ime"
+        android:layout_width="@dimen/login_tf_width"
+        android:layout_height="40dp"
+        android:background="@drawable/tf_login"
+        android:padding="7dp"
+        android:layout_marginTop="150dp"
+        android:textColorHint="@color/white_alpha"
+        android:hint="@string/login_hint_ime"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ic_izmeni_profil"
+        app:layout_constraintBottom_toTopOf="@id/tf_profil_prezime"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+
+        />
+
+    <EditText
+        android:id="@+id/tf_profil_prezime"
+        android:layout_width="@dimen/login_tf_width"
+        android:layout_height="40dp"
+        android:background="@drawable/tf_login"
+        android:padding="7dp"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/white_alpha"
+        android:hint="@string/login_hint_prezime"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tf_profil_ime"
+        app:layout_constraintBottom_toTopOf="@id/tf_profil_bolnica"
+        />
+
+    <EditText
+        android:id="@+id/tf_profil_bolnica"
+        android:layout_width="@dimen/login_tf_width"
+        android:layout_height="40dp"
+        android:background="@drawable/tf_login"
+        android:padding="7dp"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/white_alpha"
+        android:inputType="text"
+        android:hint="@string/login_hint_bolnica"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tf_profil_prezime"
+        app:layout_constraintBottom_toTopOf="@id/btn_change"
+        />
+    <Button
+        android:id="@+id/btn_change"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:background="@drawable/login_btn_bg"
+        android:gravity="center"
+        android:text="@string/profile_izmeni"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_back"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/login_btn_margin_top"
+        android:background="@drawable/login_btn_bg"
+        android:gravity="center"
+        android:text="@string/profile_odustani"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_change"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
